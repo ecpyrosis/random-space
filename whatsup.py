@@ -11,7 +11,7 @@ for i in str1.split():
 
 print('That was ' + str(count) + ' words long!\n')
 
-r = open('foo')
+r = open('whatsup.txt')
 myText = r.read()
 myWords = myText.split()
 r.close()
