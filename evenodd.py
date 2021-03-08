@@ -30,6 +30,6 @@ while (cont == 'yes' or cont == 'y'):
             else:
                 print('ok bye')
                 break
-    except:
-        numIn = int(num)
+    except(TypeError):
+        numIn == (num)
         print('That is not a number', numIn)

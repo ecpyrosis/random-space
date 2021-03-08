@@ -9,5 +9,5 @@ while rounds < 3:
     adv = input('Enter an adverb\n')
     exl = input('Enter an exclamation\n')
 
-    print(exl + '! he said '+ adv + ' as he jumped into his convertable ' + noun + ' and drove off with his '+ adj + ' wife.')
+    print(exl + ' ! he said '+ adv + ' as he jumped into his convertable ' + noun + ' and drove off with his '+ adj +      ' wife.')
     rounds += 1
