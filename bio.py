@@ -4,47 +4,30 @@ import time
 
 bio = []
 
-def getName():
-    name = input('What is your name? ')
-    try:
-        name == name.isalpha()
-        bio.append(name)
-
-    except ValueError:
-        print('That is not a name!')
+name = input('What is your name? ')
+print(name)
+if name.isalpha():
+    bio.append(name)
+else:
+    print('That is not a name!')
  
-def getBirth():
-    birth = input('What is your date of birth? (MM/DD/YY) ')
-    try:
-        birth == time.strptime(birth, '%m/%d/%y')
-        bio.append(birth)
+birth = input('What is your date of birth? (MM/DD/YY) ')
+if time.strptime(birth, '%m/%d/%y'):
+    bio.append(birth)
+else:
+    print('That is not a date')
 
-    except ValueError:
-        print('That is not a date')
+addr = input('What is your full address? ')
+if addr.isalnum():
+    bio.append(addr)
+else:
+    print('That is not an address!')
 
-def getAddr():
-    addr = input('What is your full address? ')
-    try:
-        addr == addr.isalnum()
-        bio.append(addr)
-      
-    except ValueError:
-        print('That is not an address!')
-
-def getGoals():
-    goals = input('What are your personal goals? ')
-    try:
-        goals == goals.isalnum()
-        bio.append(goals)
-     
-    except ValueError:
-        print('Not so sure about that....')
-
-
-getName()
-getBirth()
-getAddr()
-getGoals()
+goals = input('What are your personal goals? ')
+if goals.isalnum():
+    bio.append(goals)
+else:
+    print('Not so sure about that....')
 
 
 print('Hello ' + bio[0] +'!')
