@@ -14,6 +14,8 @@ print("---------------------------------->")
 
 ip_addr = input("Enter an IP address to scan: ")
 print("The IP you entered is: ", ip_addr)
+
+# https://docs.python.org/3/library/functions.html?highlight=type#type
 type(ip_addr)
 
 resp = input("""\nPlease enter the type of scan you want to run
@@ -46,5 +48,8 @@ elif resp == '3':
     print(scanner[ip_addr].all_protocols())
     print("open ports: ", scanner[ip_addr]['tcp'].keys())
 
-elif resp >= '4':
-    print("Plase enter a valid option (1-3)")
+# else resp >= '4':
+#     print("Plase enter a valid option (1-3)")
+
+else:
+    print("Please enter a valid option (1-3)")
