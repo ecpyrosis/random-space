@@ -18,16 +18,17 @@ else:
     print('That is not a date')
 
 addr = input('What is your full address? ')
-if addr.isalnum():
-    bio.append(addr)
-else:
-    print('That is not an address!')
+bio.append(addr)
+# if addr.isalnum():
+#     bio.append(addr)
+# else:
+#     print('That is not an address!')
 
 goals = input('What are your personal goals? ')
-if goals.isalnum():
-    bio.append(goals)
-else:
-    print('Not so sure about that....')
+# if goals.isalnum():
+bio.append(goals)
+# else:
+#     print('Not so sure about that....')
 
 
 print('Hello ' + bio[0] +'!')
