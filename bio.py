@@ -1,5 +1,16 @@
 #!/usr/bin/env python
 
+
+# What is your name? Biff
+# Biff
+# What is your date of birth? (MM/DD/YY) 03/03/03
+# What is your full address? 66 Way Lane
+# What are your personal goals? eat lots of cheese
+# Hello Biff!
+# Your birthday is 03/03/03
+# You live at 66 Way Lane
+# You're goals are eat lots of cheese
+
 import time
 
 bio = []

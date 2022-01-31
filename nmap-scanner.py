@@ -3,7 +3,7 @@
 # nmap like scanner for macos
 
 # brew install nmap
-# pip3 install python-nmap
+# pip3 install python3-nmap
 
 import nmap
 
@@ -49,7 +49,7 @@ elif resp == '3':
     print("open ports: ", scanner[ip_addr]['tcp'].keys())
 
 # else resp >= '4':
-#     print("Plase enter a valid option (1-3)")
+#     print("Please enter a valid option (1-3)")
 
 else:
     print("Please enter a valid option (1-3)")
