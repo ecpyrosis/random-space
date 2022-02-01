@@ -61,7 +61,7 @@ def main():
     elif player == "scissors" and computer == "paper":
         print("Player wins\n")
 
-    replay = input("Play again?").lower()
+    replay = input("Play again?\n").lower()
     if replay == "yes":
         main()
     else:
