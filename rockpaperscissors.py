@@ -42,7 +42,7 @@ choice = ["rock", "paper", "scissors"]
 def main():
     computer = choice[randint(0,2)]
 
-    print("Welcome to Rock, Paper Scissors!")
+    print("Welcome to Rock, Paper, Scissors!")
     player = input("Choose: ").lower()
     print("Computer chose: " + computer)
 
@@ -61,7 +61,11 @@ def main():
     elif player == "scissors" and computer == "paper":
         print("Player wins\n")
 
-    main()
+    replay = input("Play again?").lower()
+    if replay == "yes":
+        main()
+    else:
+        exit()
 
 main()
 
