@@ -11,7 +11,7 @@
 import requests
 
 r = requests.get('https://www.disney.com')
-# print(r.content)
-print(r.text)
+print(r.content)
+# print(r.text)
 # print(r.headers)
 # print(r.elapsed)
