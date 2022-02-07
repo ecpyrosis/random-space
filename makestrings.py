@@ -7,8 +7,8 @@
 #    tr -dc 'A-Za-z0-9/' </dev/urandom | head -c 104  ; echo
 #   LHbKeOXWwaUht5r3z55MMdSBAVf63/c8p7DgnElU1DkrAa7JD4k7oiukzIgU1827UG0UVMEPopj2NFOXsJk0hHgA8ece6NwEK3VB8KKC
 # macOS:
-#   cat /dev/urandom | env LC_ALL=C tr -dc 'a-zA-Z0-9/' | fold -w 104 | head -n 1
-#   TfM4sYpINNP9Nt8aYyDIGZTUl772rpakCsBPj6WjUtuakBYJfU3UoL7WM/1BvMBSrzaaV/rQBqck6VBtzwS97rK8Wj/2Drh4dg3BuwqF
+#   env LC_ALL=C tr -dc 'a-zA-Z0-9/' < /dev/urandom | head -c 104; echo
+#   yCSz5hNmFtD3DoQDaVMOPHV/sELBEPRwxPpePZ/I4NJDo7fWKfakvQk6ID3NpQYaj/wpfb5ZHWUGjqgBbfGS19HC3OmeMzri4jNnHdfV
 
 from random import choice
 from string import ascii_lowercase

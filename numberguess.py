@@ -1,19 +1,25 @@
 #!/usr/bin/env python
 
-from random import randint
+import random
 
-number = randint(1,50)
+number = random.randint(1,50)
+print(number)
+guess = int(input("Guess a number between 1 and 50: "))
 tries = 0
-input("Guess a number between 1 - 50:\n")
+while guess != number:
+    if guess < number:
+        tries += 1
+        print("Too cold. Try again")
+        guess = int(input("Guess a number between 1 and 50: "))
+    else:
+        tries += 1
+        print("Too hot. Try again")
+        guess = int(input("Guess a number between 1 and 50: "))
 
-def guess(number):
-    tries += 1
-    if input == number:
-        print("Correct! You took " + tries + "guesses to get it right!" )
-        exit()
-    elif input < number:
-        print("Getting cold...")
-    elif input > number:
-        print("Too hot...")
+tries += 1
+print("You guessed correctly! It took you " + str(tries) + " tries" )
 
-guess(input)
+
+
+
+
